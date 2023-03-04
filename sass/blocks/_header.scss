@@ -6,3 +6,77 @@ header{
     z-index: 99;
     padding: 20px 0px;
 }
+
+.header{
+    @include flex(row, center, space-between);
+    &__nav{
+        &--list{
+            @include flex(row, center, space-between);
+            width: 313px;
+            margin-left: -350px;
+            list-style-type: none;
+            &-item{
+                &-link{
+                    text-decoration: none;
+                    color: #212121;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+                &-link-active{
+                    color: #2D76F9;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    &__button{
+        border: 1.5px solid #2D76F9;
+        padding: 12px 40px;
+        border-radius: 1500px;
+        background-color: #D6E5FD;
+        color: #2D76F9;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__menu{
+        display: none;
+        .bx-menu{
+            font-size: 40px;
+            color: #2D76F9;
+            border: 3px solid #2D76F9;
+            border-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+// ================================
+// Responsive 1070px
+// ================================
+
+
+@media only screen and (max-width: 1070px){
+    .header__nav{
+        display: none;
+    }
+}
+
+// ================================
+// Responsive 576px
+// ================================
+
+
+@media only screen and (max-width: 576px){
+    .header__button{
+        display: none;
+    }
+
+    .header__menu{
+        display: block;
+        .bx-menu{
+            font-size: 30px;
+        }
+    }
+}

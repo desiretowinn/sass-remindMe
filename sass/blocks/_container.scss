@@ -5,23 +5,13 @@
     padding: 0px 156px;
 }
 
-.container1{
-    max-width: 1440px;
-    width: 100%;
-    margin: 0px auto;
-    background-image: url(../../images/background-img-body.png), url(../../images/background-img-body-2.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position-y: 400px, 1400px;
-    background-position-x: left, right;
-}
-
 // ================================
-// TABLET
+// Responsive 1300px
 // ================================
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1300px){
     .container{
-        max-width: 689px;
+        max-width: 1300px;
         width: 100%;
         margin: 0px auto;
         padding: 0px 40px;
@@ -29,17 +19,16 @@
     
 }
 
-
 // ================================
-// MOBILE
+// Responsive 576px
 // ================================
 
-@media only screen and (max-width: 375px){
+
+@media only screen and (max-width: 576px){
     .container{
-        max-width: 375px;
+        max-width: 576px;
         width: 100%;
         margin: 0px auto;
-        padding: 0px 24px;
+        padding: 0px 32px;
     }
-    
 }
