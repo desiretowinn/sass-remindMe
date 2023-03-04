@@ -1,0 +1,45 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 156px;
+}
+
+.container1{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+    background-image: url(../../images/background-img-body.png), url(../../images/background-img-body-2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: 400px, 1400px;
+    background-position-x: left, right;
+}
+
+// ================================
+// TABLET
+// ================================
+
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 689px;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 40px;
+    }
+    
+}
+
+
+// ================================
+// MOBILE
+// ================================
+
+@media only screen and (max-width: 375px){
+    .container{
+        max-width: 375px;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px 24px;
+    }
+    
+}
