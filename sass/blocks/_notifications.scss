@@ -1,10 +1,14 @@
 .section-notification{
-    @include flex(row, center, space-between);
+    .container{
+        @include flex(row, center, space-between);
+        padding-right: 0;
+    }
     margin-bottom: 150px;
     &-img{
         background-color: #EEF4FF;
         border-radius: 100px 0px 0px 100px;
         width: 100%;
+        margin-left: 20px;
     }
     
     .container{
@@ -36,9 +40,12 @@
 
 @media only screen and (max-width: 1070px){
     .section-notification{
-        display:flex;
-        flex-wrap: wrap-reverse;
-        flex-direction: row-reverse;
+        .container{
+            display:flex;
+            flex-wrap: wrap-reverse;
+            flex-direction: row-reverse;
+        }
+        
         &-img{
             width: 100%;
             border-radius: 0px 0px 0px 0px;
@@ -66,7 +73,7 @@
 
 
 @media only screen and (max-width: 576px){
-
+    
     .notification{
         text-align: left;
     }

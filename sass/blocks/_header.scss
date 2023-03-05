@@ -20,6 +20,9 @@ header{
                     color: #212121;
                     font-weight: 400;
                     font-size: 18px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
                 &-link-active{
                     color: #2D76F9;
@@ -36,6 +39,11 @@ header{
         color: #2D76F9;
         font-weight: 400;
         font-size: 18px;
+        &:hover{
+            color: #fff;
+        border: 1.5px solid #fff;
+        background-color: #2D76F9;
+        }
     }
 
     &__menu{

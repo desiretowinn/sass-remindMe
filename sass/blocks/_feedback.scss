@@ -1,9 +1,13 @@
 .section-feedback{
-    @include flex(row, center, space-between);
+    .container{
+        @include flex(row, center, space-between);
+        padding-left: 0;
+    }
     margin-top: 150px;
     &-img{
         background-color: #EEF4FF;
         border-radius: 0px 100px 100px 0px;
+        margin-right: 30px;
     }
 }
 
@@ -41,11 +45,12 @@
         color: #212121;
         margin-bottom: 58px;
     }
-
+    
     &__directions{
         .bx{
             font-size: 45px;
             color: #2D76F9;
+            cursor: pointer;
         }
     }
 }
@@ -59,9 +64,12 @@
 
 @media only screen and (max-width: 1070px){
     .section-feedback{
-        &-img{
+        .container{
+                    &-img{
             display: none;
         }
+        }
+
     }
     
     .feedback{
@@ -95,7 +103,7 @@
             color: #212121;
             margin-bottom: 58px;
         }
-    
+        
         &__directions{
             .bx{
                 font-size: 45px;
@@ -114,7 +122,7 @@
 @media only screen and (max-width: 576px){
     .feedback{
         text-align: center;
-
+        
         &__heading{
             font-weight: 600;
             font-size: 24px;
@@ -152,7 +160,7 @@
             margin-bottom: 58px;
             text-align: left;
         }
-    
+        
         &__directions{
             .bx{
                 font-size: 45px;

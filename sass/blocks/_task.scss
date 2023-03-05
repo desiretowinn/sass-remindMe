@@ -1,14 +1,15 @@
 .section-task{
-    @include flex(row, center, space-between);
     margin-bottom: 150px;
     &__img{
         background-color: #EEF4FF;
         border-radius: 0px 100px 100px 0px;
+        margin-right: 20px;
     }
     
     .container{
+        @include flex(row, center, space-between);
+        padding-left: 0;
         .task{
-            
             &--heading{
                 font-weight: 600;
                 font-size: 36px;
@@ -37,7 +38,10 @@
 
 @media only screen and (max-width: 1070px){
     .section-task{
-        display: table;
+        .container{
+            display: table;
+
+        }
         margin-bottom: 50px;
         &__img{
             width: 100%;
