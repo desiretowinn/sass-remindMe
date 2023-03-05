@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 ========================================================================== */
@@ -1007,6 +1008,205 @@ header {
   }
   .feedback__directions .bx {
     font-size: 45px;
+    color: #2D76F9;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 225px;
+  width: 100%;
+}
+.footer__left {
+  width: 30%;
+}
+.footer__left--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #747474;
+}
+.footer__middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.footer__middle--box--heading {
+  margin-bottom: 58px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.footer__middle--box--list {
+  padding-left: 15px;
+  list-style: none;
+}
+.footer__middle--box--list-item::before {
+  content: "•";
+  color: #2D76F9;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.footer__middle--box--list-item-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #747474;
+  cursor: pointer;
+}
+.footer__right {
+  width: 20%;
+}
+.footer__right--heading {
+  margin-bottom: 61px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+.footer__right .bx {
+  font-size: 35px;
+  color: #2D76F9;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1070px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    display: table;
+    margin-top: 225px;
+    width: 100%;
+    text-align: center;
+  }
+  .footer__left {
+    width: 100%;
+    align-items: center;
+  }
+  .footer__left--link-img {
+    margin: 0px auto;
+  }
+  .footer__left--text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #747474;
+  }
+  .footer__middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0px auto;
+  }
+  .footer__middle--box--heading {
+    margin-bottom: 58px;
+  }
+  .footer__middle--box--list {
+    padding-left: 15px;
+    list-style: none;
+  }
+  .footer__middle--box--list-item::before {
+    content: "•";
+    color: #2D76F9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .footer__middle--box--list-item-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #747474;
+    cursor: pointer;
+  }
+  .footer__right {
+    width: 100%;
+  }
+  .footer__right--heading {
+    margin-bottom: 61px;
+  }
+  .footer__right .bx {
+    font-size: 30px;
+    color: #2D76F9;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    display: table;
+    margin-top: 225px;
+    width: 100%;
+    text-align: start;
+  }
+  .footer__left {
+    width: 100%;
+    align-items: center;
+  }
+  .footer__left--link-img {
+    margin: 0px;
+  }
+  .footer__left--text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: #747474;
+  }
+  .footer__middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+  }
+  .footer__middle--box--heading {
+    margin-bottom: 58px;
+  }
+  .footer__middle--box--list {
+    padding-left: 15px;
+    list-style: none;
+  }
+  .footer__middle--box--list-item::before {
+    content: "•";
+    color: #2D76F9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  .footer__middle--box--list-item-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: none;
+    color: #747474;
+    cursor: pointer;
+  }
+  .footer__right {
+    width: 100%;
+  }
+  .footer__right--heading {
+    margin-bottom: 61px;
+  }
+  .footer__right .bx {
+    font-size: 30px;
     color: #2D76F9;
   }
 }/*# sourceMappingURL=main.css.map */

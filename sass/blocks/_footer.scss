@@ -1,0 +1,235 @@
+.footer{
+    @include flex(row, start, space-between);
+    margin-top: 225px;
+    width: 100%;
+    
+    &__left{
+        width: 30%;
+        &--text{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 36px;
+            color: #747474;
+        }
+    }
+    
+    &__middle{
+        @include flex(row, center, space-between);
+        width: 30%;
+        &--box{
+            
+            &--heading{
+                margin-bottom: 58px;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color:#000000;
+            }
+            
+            &--list{
+                padding-left: 15px;
+                list-style: none;
+                &-item{
+                    
+                    &::before{
+                        content: "\2022"; 
+                        color: #2D76F9;
+                        font-weight: bold; 
+                        display: inline-block; 
+                        width: 1em; 
+                        margin-left: -1em;
+                    }
+                    &-link{
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 36px;
+                        text-decoration: none;
+                        color: #747474;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__right{
+        width: 20%;
+        &--heading{
+            margin-bottom: 61px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color:#000000;
+        }
+        
+        .bx{
+            font-size: 35px;
+            color:#2D76F9;
+            margin-right: 20px;
+        }
+    }
+    
+}
+
+
+
+// ================================
+// Responsive 1070px
+// ================================
+
+
+@media only screen and (max-width: 1070px){
+    .footer{
+        @include flex(row, start, space-between);
+        display: table;
+        margin-top: 225px;
+        width: 100%;
+        text-align: center;
+        
+        &__left{
+            width: 100%;
+            align-items: center;
+            &--link{
+                &-img{
+                    margin: 0px auto;
+                }
+            }
+            &--text{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 36px;
+                color: #747474;
+            }
+        }
+        
+        &__middle{
+            @include flex(row, center, space-between);
+            width: 50%;
+            margin: 0px auto;
+            &--box{
+                
+                &--heading{
+                    margin-bottom: 58px;
+                }
+                
+                &--list{
+                    padding-left: 15px;
+                    list-style: none;
+                    &-item{
+                        
+                        &::before{
+                            content: "\2022"; 
+                            color: #2D76F9;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em;
+                        }
+                        &-link{
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 36px;
+                            text-decoration: none;
+                            color: #747474;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &__right{
+            width: 100%;
+            &--heading{
+                margin-bottom: 61px;
+            }
+            
+            .bx{
+                font-size: 30px;
+                color:#2D76F9;
+            }
+        }
+        
+    }
+}
+
+
+// ================================
+// Responsive 768px
+// ================================
+
+
+@media only screen and (max-width: 768px){
+    .footer{
+        @include flex(row, start, space-between);
+        display: table;
+        margin-top: 225px;
+        width: 100%;
+        text-align: start;
+        
+        &__left{
+            width: 100%;
+            align-items: center;
+            &--link{
+                &-img{
+                    margin: 0px;
+                }
+            }
+            &--text{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 36px;
+                color: #747474;
+            }
+        }
+        
+        &__middle{
+            @include flex(row, center, space-between);
+            width: 100%;
+            margin: 0px;
+            &--box{
+                
+                &--heading{
+                    margin-bottom: 58px;
+                }
+                
+                &--list{
+                    padding-left: 15px;
+                    list-style: none;
+                    &-item{
+                        
+                        &::before{
+                            content: "\2022"; 
+                            color: #2D76F9;
+                            font-weight: bold; 
+                            display: inline-block; 
+                            width: 1em; 
+                            margin-left: -1em;
+                        }
+                        &-link{
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 36px;
+                            text-decoration: none;
+                            color: #747474;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        
+        &__right{
+            width: 100%;
+            &--heading{
+                margin-bottom: 61px;
+            }
+            
+            .bx{
+                font-size: 30px;
+                color:#2D76F9;
+            }
+        }
+        
+    }
+}
