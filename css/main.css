@@ -681,6 +681,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 .section-notification-img {
   background-color: #EEF4FF;
@@ -731,6 +732,147 @@ header {
   .notification-heading {
     font-size: 24px;
     line-height: 40;
+    margin-bottom: 25px;
+  }
+}
+.section-app .container .app {
+  width: 100%;
+  background: #2D76F9;
+  background-image: url(../../images/bg-circles.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 245px;
+  border-radius: 50px;
+}
+.section-app .container .app__heading {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 65px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 95px;
+}
+.section-app .container .app__box {
+  text-align: center;
+}
+.section-app .container .app__box-button {
+  padding: 24px 58px;
+  background: #FFFFFF;
+  border-radius: 1500px;
+  border: white;
+  color: #2D76F9;
+  margin-right: 50px;
+}
+.section-app .container .app__box-button:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.section-app .container .app__box-button-active {
+  padding-right: 77px;
+  padding-left: 77px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .app {
+    padding: 70px 145px;
+  }
+  .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .app__box-button {
+    margin-bottom: 25px;
+  }
+  .section-app .container .app {
+    background: #2D76F9;
+    background-image: url(../../images/bg-circles.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 145px;
+    border-radius: 50px;
+  }
+  .section-app .container .app__heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+  .section-app .container .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .section-app .container .app__box-button {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .app {
+    padding: 50px 50px !important;
+  }
+  .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .app__box-button {
+    margin-bottom: 25px;
+  }
+  .section-app .container .app {
+    background: #2D76F9;
+    background-image: url(../../images/bg-circles.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    border-radius: 50px;
+  }
+  .section-app .container .app__heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+  .section-app .container .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .section-app .container .app__box-button {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .app {
+    padding: 50px 50px !important;
+  }
+  .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .app__box-button {
+    margin-bottom: 25px;
+  }
+  .section-app .container .app {
+    background: #2D76F9;
+    background-image: url(../../images/bg-circles.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    border-radius: 50px;
+  }
+  .section-app .container .app__heading {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+  .section-app .container .app__box {
+    display: table;
+    text-align: center;
+    padding-left: 15px;
+  }
+  .section-app .container .app__box-button {
     margin-bottom: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

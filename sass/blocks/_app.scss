@@ -1,0 +1,191 @@
+
+.section-app{
+    .container{
+        .app{
+            width: 100%;
+            background: #2D76F9;
+            background-image: url(../../images/bg-circles.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 100px 245px;
+            border-radius: 50px;
+            &__heading{
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 65px;
+                text-align: center;
+                color: #FFFFFF;
+                margin: 0;
+                margin-bottom: 95px;
+            }
+            
+            &__box{
+                text-align: center;
+                &-button{
+                    padding: 24px 58px;
+                    background: #FFFFFF;
+                    border-radius: 1500px;
+                    border: white;
+                    color: #2D76F9;
+                    margin-right: 50px;
+                    
+                    &:hover{
+                        border: 1px solid white;
+                        background-color: transparent;
+                        color: white;
+                    }
+                }
+                &-button-active{
+                    padding-right: 77px;
+                    padding-left: 77px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// ================================
+// Responsive 1180px
+// ================================
+
+
+@media only screen and (max-width: 1180px){
+    .app{
+        padding: 70px 145px;
+    }
+    .app__box{
+        display: table;
+        text-align: center;
+        padding-left: 50px;
+        &-button{
+            margin-bottom: 25px;
+        }
+    }
+
+
+.section-app{
+    .container{
+        .app{
+            background: #2D76F9;
+            background-image: url(../../images/bg-circles.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 70px 145px;
+            border-radius: 50px;
+            &__heading{
+                font-size: 24px;
+                line-height: 36px;
+                margin-bottom: 50px;
+            }
+            
+            &__box{
+                display: table;
+                text-align: center;
+                padding-left: 50px;
+                &-button{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+
+// ================================
+// Responsive 710px
+// ================================
+
+@media only screen and (max-width: 710px){
+    .app{
+        padding: 50px 50px !important;
+    }
+    .app__box{
+        display: table;
+        text-align: center;
+        padding-left: 50px;
+        &-button{
+            margin-bottom: 25px;
+        }
+    }
+
+
+    .section-app{
+        .container{
+            .app{
+                background: #2D76F9;
+                background-image: url(../../images/bg-circles.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50px 50px;
+                border-radius: 50px;
+                &__heading{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 50px;
+                }
+                
+                &__box{
+                    display: table;
+                    text-align: center;
+                    padding-left: 50px;
+                    &-button{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    }
+
+
+    // ================================
+// Responsive 450px
+// ================================
+
+@media only screen and (max-width: 450px){
+    .app{
+        padding: 50px 50px !important;
+    }
+    .app__box{
+        display: table;
+        text-align: center;
+        padding-left: 50px;
+        &-button{
+            margin-bottom: 25px;
+        }
+    }
+
+
+    .section-app{
+        .container{
+            .app{
+                background: #2D76F9;
+                background-image: url(../../images/bg-circles.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding: 50px 50px;
+                border-radius: 50px;
+                &__heading{
+                    font-size: 24px;
+                    line-height: 36px;
+                    margin-bottom: 50px;
+                }
+                
+                &__box{
+                    display: table;
+                    text-align: center;
+                    padding-left: 15px;
+                    &-button{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+    }
