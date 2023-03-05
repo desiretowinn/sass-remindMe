@@ -107,13 +107,14 @@
     }
     .hero__info{
         margin: 0px auto;
-        width: 450px;
+        width: 100%;
         &--heading{
             margin: 0px auto;
-            width: 450px;
+            width: 100%;
+            font-size: 48px;
         }
         &--text{
-            width: 450px;
+            width:100%;
         }
 
         &--button{
