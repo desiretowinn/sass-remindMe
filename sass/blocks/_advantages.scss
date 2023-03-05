@@ -4,6 +4,7 @@
     list-style-type: none;
     text-align: left;
     margin-top: 150px;
+    margin-bottom: 150px;
 
     &--item{
         width: 387px;
@@ -64,5 +65,7 @@
 @media only screen and (max-width: 796px){
     .advantages__list{
         display: table;
+        margin-bottom: 50px;
+        margin-top: 50px;
 }
 }

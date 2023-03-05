@@ -569,6 +569,7 @@ header {
   list-style-type: none;
   text-align: left;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .advantages__list--item {
   width: 387px;
@@ -614,6 +615,8 @@ header {
 @media only screen and (max-width: 796px) {
   .advantages__list {
     display: table;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
 }
 .section-task {
@@ -621,6 +624,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 150px;
 }
 .section-task__img {
   background-color: #EEF4FF;
@@ -639,11 +643,13 @@ header {
   font-size: 18px;
   line-height: 36px;
   color: #747474;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1070px) {
   .section-task {
     display: table;
+    margin-bottom: 50px;
   }
   .section-task__img {
     width: 100%;
@@ -651,12 +657,78 @@ header {
     margin-bottom: 50px;
   }
 }
+@media only screen and (max-width: 910px) {
+  .task {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 576px) {
+  .task {
+    text-align: left;
+  }
   .task--text {
     margin: 0;
     font-size: 17px;
   }
   .task--heading {
+    font-size: 24px;
+    line-height: 40;
+    margin-bottom: 25px;
+  }
+}
+.section-notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-notification-img {
+  background-color: #EEF4FF;
+  border-radius: 100px 0px 0px 100px;
+  width: 100%;
+}
+.section-notification .container .notification-heading {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 65px;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.section-notification .container .notification-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #747474;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1070px) {
+  .section-notification {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+  .section-notification-img {
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 910px) {
+  .notification {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .notification {
+    text-align: left;
+  }
+  .notification-text {
+    margin: 0;
+    font-size: 17px;
+  }
+  .notification-heading {
     font-size: 24px;
     line-height: 40;
     margin-bottom: 25px;

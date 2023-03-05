@@ -1,15 +1,14 @@
-.section-task{
+.section-notification{
     @include flex(row, center, space-between);
-    margin-bottom: 150px;
-    &__img{
+    &-img{
         background-color: #EEF4FF;
-        border-radius: 0px 100px 100px 0px;
+        border-radius: 100px 0px 0px 100px;
+        width: 100%;
     }
     
     .container{
-        .task{
-            
-            &--heading{
+        .notification{
+            &-heading{
                 font-weight: 600;
                 font-size: 36px;
                 line-height: 65px;
@@ -17,7 +16,7 @@
                 margin: 0;
                 margin-bottom: 50px;
             }
-            &--text{
+            &-text{
                 font-weight: 400;
                 font-size: 18px;
                 line-height: 36px;
@@ -29,17 +28,17 @@
 }
 
 
-
 // ================================
 // Responsive 1070px
 // ================================
 
 
 @media only screen and (max-width: 1070px){
-    .section-task{
-        display: table;
-        margin-bottom: 50px;
-        &__img{
+    .section-notification{
+        display:flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+        &-img{
             width: 100%;
             border-radius: 0px 0px 0px 0px;
             margin-bottom: 50px;
@@ -54,7 +53,7 @@
 
 
 @media only screen and (max-width: 910px){
-    .task{
+    .notification{
         text-align: center;
     }
 }
@@ -66,14 +65,15 @@
 
 
 @media only screen and (max-width: 576px){
-    .task{
+
+    .notification{
         text-align: left;
     }
-    .task--text{
+    .notification-text{
         margin: 0;
         font-size: 17px;
     }
-    .task--heading{
+    .notification-heading{
         font-size: 24px;
         line-height: 40;
         margin-bottom: 25px;
