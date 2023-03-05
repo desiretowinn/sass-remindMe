@@ -74,13 +74,13 @@
     }
     .hero__info{
         margin: 0px auto;
-        width: 600px;
+        width: 100%;
         &--heading{
             margin: 0px auto;
-            width: 600px;
+            width: 100%;
         }
         &--text{
-            width: 600px;
+            width: 100%;
         }
 
         &--button{
@@ -88,6 +88,21 @@
         }
     }
 }
+
+
+// ================================
+// Responsive 680px
+// ================================
+
+
+@media only screen and (max-width: 680px){
+    .hero-img{
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+
+
 
 
 // ================================

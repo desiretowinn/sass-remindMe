@@ -515,17 +515,23 @@ header {
   }
   .hero__info {
     margin: 0px auto;
-    width: 600px;
+    width: 100%;
   }
   .hero__info--heading {
     margin: 0px auto;
-    width: 600px;
+    width: 100%;
   }
   .hero__info--text {
-    width: 600px;
+    width: 100%;
   }
   .hero__info--button {
     margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .hero-img {
+    margin: 0px auto;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -608,5 +614,51 @@ header {
 @media only screen and (max-width: 796px) {
   .advantages__list {
     display: table;
+  }
+}
+.section-task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-task__img {
+  background-color: #EEF4FF;
+  border-radius: 0px 100px 100px 0px;
+}
+.section-task .container .task--heading {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 65px;
+  color: #212121;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.section-task .container .task--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: #747474;
+}
+
+@media only screen and (max-width: 1070px) {
+  .section-task {
+    display: table;
+  }
+  .section-task__img {
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .task--text {
+    margin: 0;
+    font-size: 17px;
+  }
+  .task--heading {
+    font-size: 24px;
+    line-height: 40;
+    margin-bottom: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
