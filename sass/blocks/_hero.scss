@@ -1,0 +1,123 @@
+.section-hero{
+    @include flex(row, center, space-between);
+}
+
+.hero{
+    margin-top: 200px;
+    &__info{
+        width: 533px;
+        &--heading{
+            color: #212121;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 85px;
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+
+        &--text{
+            color: #747474;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 36px;
+            margin-bottom: 50px;
+        }
+
+        &--button{
+            width: 250px;
+            padding: 24px 58px;
+            color: white;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            border-radius: 1500px;
+            border:none;
+            background-color: #2D76F9;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+
+// ================================
+// Responsive 1264px
+// ================================
+
+
+@media only screen and (max-width: 1264px){
+    .hero__info{
+        width: 400px;
+        &--heading{
+            font-size: 50px;
+        }
+    }
+}
+
+
+// ================================
+// Responsive 1070px
+// ================================
+
+
+@media only screen and (max-width: 1070px){
+    .section-hero{
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+    }
+    .hero-img{
+        margin: 0px auto;
+        width: 100%;
+    }
+    .hero__info{
+        margin: 0px auto;
+        width: 600px;
+        &--heading{
+            margin: 0px auto;
+            width: 600px;
+        }
+        &--text{
+            width: 600px;
+        }
+
+        &--button{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+// ================================
+// Responsive 576px
+// ================================
+
+
+@media only screen and (max-width: 576px){
+    .section-hero{
+        display: table;
+        text-align: start;
+        width: 100%;
+    }
+    .hero-img{
+        margin: 0px auto;
+        width: 100%;
+    }
+    .hero__info{
+        margin: 0px auto;
+        width: 450px;
+        &--heading{
+            margin: 0px auto;
+            width: 450px;
+        }
+        &--text{
+            width: 450px;
+        }
+
+        &--button{
+            margin-bottom: 50px;
+        }
+    }
+}

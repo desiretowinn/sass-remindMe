@@ -1,9 +1,8 @@
 header{
-    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 10;
     padding: 20px 0px;
 }
 
@@ -33,7 +32,7 @@ header{
         border: 1.5px solid #2D76F9;
         padding: 12px 40px;
         border-radius: 1500px;
-        background-color: #D6E5FD;
+        background-color: transparent;
         color: #2D76F9;
         font-weight: 400;
         font-size: 18px;
